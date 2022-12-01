@@ -1,0 +1,9 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@zerodevapp/hardhat": "^0.0.1",
+    "@zerodevapp/mock-server": "^0.1.0",
+    "hardhat": "^2.12.3"
+  }
+}
