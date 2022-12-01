@@ -1,13 +1,20 @@
-# Sample Hardhat Project
+1. Check `hardhat.config.ts` to see plugins are imported at the top:
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+```ts
+...
+import "@zerodevapp/mock-server";
+import "@zerodevapp/hardhat";
+...
 ```
+
+2. Run `npx hardhat` to see error
+
+```bash
+$ npx hardhat
+An unexpected error occurred:
+
+Error: Cannot find module '@zerodevapp/mock-server'
+...
+```
+
+3. See that module is correctly installed in `src/index.ts` when the TypeScript server does not display an import error.
